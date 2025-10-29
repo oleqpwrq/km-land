@@ -18,7 +18,7 @@ FROM_EMAIL="KMLeads <noreply@your-domain.com>"
 В Resend добавь домен (Dashboard → Domains) и дождись **Verified**.
 
 3) **Деплой на Vercel**
-- Вариант А (web): импортируй репозиторий, добавь ENV (`RESEND_API_KEY`, `TO_EMAIL`, `FROM_EMAIL`), Deploy.
+- Вариант А (web): импортируй репозиторий, добавьn ENV (`RESEND_API_KEY`, `TO_EMAIL`, `FROM_EMAIL`), Deploy.
 - Вариант Б (CLI):
 ```bash
 npm i -g vercel
@@ -31,7 +31,7 @@ vercel --prod   # Production
 Файлы в `/public`: `logo.png`, `feeds.png`, `favicon.ico`, `apple-touch-icon.png`. Заменяй на свои.
 
 5) **Где что лежит**
-- `app/layout.tsx` — фикс-фон + фавикон
+- `app/layout.tsx` — фикс-фон + фавиконы
 - `app/page.tsx` — весь лендинг
 - `app/api/lead/route.ts` — отправка заявок через Resend
 - `app/globals.css` — Tailwind подключение
@@ -41,4 +41,4 @@ vercel --prod   # Production
 - Email: пустой или `*@*.(ru|com)`.
 - В футере: Telegram-ссылка и оферта.
 
-Удачи!
+by @oleqpwrq
